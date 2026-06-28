@@ -531,7 +531,7 @@ export default function TaskDashboard({
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, x: -15, scale: 0.95 }}
                     transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
-                    className={`bg-white dark:bg-slate-955 border rounded-2xl overflow-hidden transition-all duration-200 shadow-sm hover:shadow-md ${urgency.ring}`}
+                    className={`bg-white dark:bg-slate-950 border rounded-2xl overflow-hidden transition-all duration-200 shadow-sm hover:shadow-md ${urgency.ring}`}
                   >
                   {/* Task Card Header Area */}
                   <div className="p-4.5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
@@ -678,7 +678,7 @@ export default function TaskDashboard({
                             {task.subtasks.map((st) => (
                               <label 
                                 key={st.id}
-                                className={`flex items-center gap-3 p-2.5 rounded-xl bg-white dark:bg-slate-955/80 border border-slate-200 dark:border-slate-850 text-xs cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-900/40 transition-all ${
+                                className={`flex items-center gap-3 p-2.5 rounded-xl bg-white dark:bg-slate-950/80 border border-slate-200 dark:border-slate-850 text-xs cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-900/40 transition-all ${
                                   st.completed ? 'opacity-50 line-through text-slate-400 dark:text-slate-500' : 'text-slate-705 dark:text-slate-300'
                                 }`}
                               >

@@ -78,7 +78,7 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-955 text-slate-800 dark:text-slate-100 flex items-center justify-center p-4 transition-colors duration-200">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 flex items-center justify-center p-4 transition-colors duration-200">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-650/5 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-rose-500/5 rounded-full blur-[120px] pointer-events-none" />
 
@@ -140,14 +140,14 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
                       type="time" 
                       value={workingHoursStart}
                       onChange={(e) => setWorkingHoursStart(e.target.value)}
-                      className="w-full px-3 py-2.5 bg-slate-50 dark:bg-slate-955 border border-slate-200 dark:border-slate-800 rounded-xl text-slate-800 dark:text-white focus:outline-none focus:border-indigo-500 text-xs font-medium font-mono"
+                      className="w-full px-3 py-2.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl text-slate-800 dark:text-white focus:outline-none focus:border-indigo-500 text-xs font-medium font-mono"
                     />
                     <span className="text-slate-400 dark:text-slate-600 text-xs font-mono">to</span>
                     <input 
                       type="time" 
                       value={workingHoursEnd}
                       onChange={(e) => setWorkingHoursEnd(e.target.value)}
-                      className="w-full px-3 py-2.5 bg-slate-50 dark:bg-slate-955 border border-slate-200 dark:border-slate-800 rounded-xl text-slate-800 dark:text-white focus:outline-none focus:border-indigo-500 text-xs font-medium font-mono"
+                      className="w-full px-3 py-2.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl text-slate-800 dark:text-white focus:outline-none focus:border-indigo-500 text-xs font-medium font-mono"
                     />
                   </div>
                 </div>
@@ -161,7 +161,7 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
                       max="24"
                       value={availableHours}
                       onChange={(e) => setAvailableHours(Number(e.target.value))}
-                      className="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-955 border border-slate-200 dark:border-slate-800 focus:border-indigo-500 focus:outline-none text-slate-800 dark:text-white font-bold text-xs font-mono"
+                      className="w-full px-4 py-2.5 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 focus:border-indigo-500 focus:outline-none text-slate-800 dark:text-white font-bold text-xs font-mono"
                     />
                     <span className="absolute right-4 top-3 text-slate-400 dark:text-slate-650 text-xs font-mono">hours</span>
                   </div>
@@ -433,7 +433,7 @@ export default function Onboarding({ onComplete }: OnboardingProps) {
                 <h3 className="text-[10px] font-bold uppercase tracking-wider text-slate-450 dark:text-slate-550 font-mono">Routines Configured ({initialGoals.length})</h3>
                 <div className="space-y-2 max-h-40 overflow-y-auto pr-1">
                   {initialGoals.map((g, idx) => (
-                    <div key={idx} className="flex justify-between items-center bg-slate-50 dark:bg-slate-955 p-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-850 text-xs">
+                    <div key={idx} className="flex justify-between items-center bg-slate-50 dark:bg-slate-950 p-3 py-2.5 rounded-xl border border-slate-200 dark:border-slate-850 text-xs">
                       <p className="font-bold text-slate-800 dark:text-slate-200">{g.title}</p>
                       <span className="bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-150 dark:border-emerald-500/20 px-2.5 py-0.5 rounded-lg text-[10px] font-bold uppercase font-mono">
                         {g.frequency}
