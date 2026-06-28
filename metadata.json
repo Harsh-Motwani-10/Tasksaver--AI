@@ -1,0 +1,10 @@
+{
+  "name": "TaskSaver AI",
+  "description": "An AI-powered proactive productivity companion that helps prioritize, schedule, and plan tasks autonomously to prevent missed deadlines.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
